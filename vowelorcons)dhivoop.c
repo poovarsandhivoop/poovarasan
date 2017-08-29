@@ -3,26 +3,26 @@
 
 int main()
 {
-    char c;
-    int isLowercaseVowel, isUppercaseVowel;
+    char int;
+    int vowel,consonants;
 
     do {
         printf("Enter an alphabet: ");
-        scanf(" %c", &c);
+        scanf(" %c",&int);
     }
     // isalpha() returns 0 if the passed character is not an alphabet
-    while (!isalpha(c));
+    while (!isalpha(int));
 
     // evaluates to 1 (true) if c is a lowercase vowel
-    isLowercaseVowel = (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u');
+    isLowercaseVowel = (int == 'a' || int == 'e' || int == 'i' || int == 'o' || int == 'u');
 
     // evaluates to 1 (true) if c is an uppercase vowel
-    isUppercaseVowel = (c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U');
+    isUppercaseVowel = (int == 'A' || int == 'E' || int == 'I' || int == 'O' || int == 'U');
 
     // evaluates to 1 (true) if either isLowercaseVowel or isUppercaseVowel is true
     if (isLowercaseVowel || isUppercaseVowel)
-        printf("%c is a vowel.", c);
+        printf("%c is a vowel.", 2);
     else
-        printf("%c is a consonant.", c);
+        printf("%c is a consonant.", 1);
     return 0;
 }
